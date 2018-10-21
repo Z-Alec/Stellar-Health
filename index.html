@@ -71,7 +71,90 @@ state by selecting it on the map</p>
           </div>
         </div>
         <!--img src="img/ipad.png" class="img-fluid" alt=""-->
-<iframe src="https://createaclickablemap.com/map.php?&id=75459&maplocation=false&online=true" width="1100" height="642" style="border: none;"></iframe>
+<style>
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Year</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">2010</a>
+    <a href="#about">2011</a>
+    <a href="#contact">2012</a>
+    <a href="#home">2013</a>
+    <a href="file:///C:/Users/zal3c/Desktop/startbootstrap-grayscale-master/index_2014.html">2014</a>
+    <a href="#contact">2015</a>
+    <a href="#home">2016</a>
+    <a href="#about">2017</a>
+    <a href="#contact">2018</a>
+    <a href="#contact">2019</a>
+    <a href="#contact">2020</a>
+
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<iframe src="https://createaclickablemap.com/map.php?&id=75503&maplocation=false&online=true" width="1100" height="642" style="border: none;"></iframe>
 <script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script></div>
     </section>
 
